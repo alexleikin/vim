@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/alex/test'
+let g:netrw_dirhist_6='/home/alex/.config/environment.d/qt.conf'
+let g:netrw_dirhist_5='/home/alex/.config/ncmpcpp'
+let g:netrw_dirhist_4='/home/alex/Git/dwm-manager/slstatus'
+let g:netrw_dirhist_3='/home/alex/Downloads'
+let g:netrw_dirhist_2='/home/alex/Downloads/essential-amd64-20071007'
+let g:netrw_dirhist_1='/home/alex/Downloads'
+let g:netrw_dirhist_0='/home/alex'
+let g:netrw_dirhist_9='/home/alex/ansible_scripts'
+let g:netrw_dirhist_8='/home/alex/Downloads/dracula/alacritty-master'
