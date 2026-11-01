@@ -25,7 +25,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-
 call plug#end()
 
 
@@ -76,7 +75,6 @@ map <leader>n :bnext<cr>
 map <leader>o :bprevious<cr>
 map <leader>d :bdelete<cr>
 map <leader>e :Ex<cr>
-map <leader>b :Rexplore<cr>
 map <leader>f <C-W>w
 map <leader>s <C-W>r
 
@@ -100,8 +98,11 @@ let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']
 
 command! WipeReg for i in range(34,122) | silent! call setreg(nr2char(i), []) | endfor
 command! V normal! <C-v>
-
 nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
 nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 
-nnoremap <C-s> :CtrlPMRU<CR>
+map <leader>b :Buffers<cr>
+nnoremap <C-s> :Files<CR>
+let g:fzf_vim = {}
+let g:fzf_layout = { 'down': '40%' }
+
